@@ -49,8 +49,15 @@
     selected = [];
     seatMap.innerHTML = "";
     const booked = new Set();
-    while (booked.size < 12) {
+    let attempts = 0;
+    while (booked.size < 12 && attempts < 500) {
       booked.add(`S${Math.floor(Math.random() * 80) + 1}`);
+      attempts += 1;
+    }
+    if (booked.size < 12) {
+      for (let i = 1; i <= 80 && booked.size < 12; i += 1) {
+        booked.add(`S${i}`);
+      }
     }
 
     for (let i = 1; i <= 80; i += 1) {
