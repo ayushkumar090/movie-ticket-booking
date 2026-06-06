@@ -1,6 +1,7 @@
 window.Utils = {
+  inrFormatter: new Intl.NumberFormat("en-IN", { style: "currency", currency: "INR", maximumFractionDigits: 0 }),
   formatINR(value) {
-    return new Intl.NumberFormat("en-IN", { style: "currency", currency: "INR", maximumFractionDigits: 0 }).format(value);
+    return this.inrFormatter.format(value);
   },
   qs(selector) {
     return document.querySelector(selector);

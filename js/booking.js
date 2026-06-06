@@ -48,7 +48,10 @@
   const makeSeatMap = () => {
     selected = [];
     seatMap.innerHTML = "";
-    const booked = new Set(Array.from({ length: 12 }, () => `S${Math.floor(Math.random() * 80 + 1)}`));
+    const booked = new Set();
+    while (booked.size < 12) {
+      booked.add(`S${Math.floor(Math.random() * 80 + 1)}`);
+    }
 
     for (let i = 1; i <= 80; i += 1) {
       const id = `S${i}`;
