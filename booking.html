@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Booking | MovieBook</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <header class="header glass">
+    <a class="logo" href="index.html"><img src="images/logo.svg" alt="logo" />MovieBook</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="movies.html" class="active">Movies</a>
+      <a href="cart.html">Cart <span id="cart-count">0</span></a>
+      <a href="profile.html">Profile</a>
+    </nav>
+  </header>
+
+  <main class="container booking-layout">
+    <section id="movie-info" class="panel"></section>
+    <section class="panel">
+      <h2>Choose Show & Seats</h2>
+      <div class="booking-controls">
+        <select id="theater"></select>
+        <select id="showtime"></select>
+        <select id="seat-type">
+          <option value="regular">Regular</option>
+          <option value="premium">Premium</option>
+          <option value="vip">VIP</option>
+        </select>
+      </div>
+      <div class="seat-legend">
+        <span><i class="seat available"></i>Available</span>
+        <span><i class="seat selected"></i>Selected</span>
+        <span><i class="seat booked"></i>Booked</span>
+      </div>
+      <div id="seat-map" class="seat-map"></div>
+      <div class="summary">
+        <p>Selected seats: <strong id="selected-seats">None</strong></p>
+        <p>Total: <strong id="total-price">₹0</strong></p>
+      </div>
+      <button id="add-to-cart" class="btn">Add to Cart</button>
+    </section>
+  </main>
+
+  <div id="toast" class="toast"></div>
+
+  <script src="js/utils.js" defer></script>
+  <script src="js/storage.js" defer></script>
+  <script src="js/booking.js" defer></script>
+</body>
+</html>

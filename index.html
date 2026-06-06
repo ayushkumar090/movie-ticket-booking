@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movie Ticket Booking</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <header class="header glass">
+    <a class="logo" href="index.html"><img src="images/logo.svg" alt="logo" />MovieBook</a>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="movies.html">Movies</a>
+      <a href="cart.html">Cart <span id="cart-count">0</span></a>
+      <a href="profile.html">Profile</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Book Movie Tickets in Seconds</h1>
+      <p>Explore latest releases, pick your seats, and checkout instantly.</p>
+      <a class="btn" href="movies.html">Browse Movies</a>
+    </section>
+
+    <section class="container">
+      <div class="section-title-wrap">
+        <h2>Featured Movies</h2>
+        <button id="next-featured" class="ghost-btn">Next</button>
+      </div>
+      <div id="featured-slider" class="featured-slider"></div>
+    </section>
+
+    <section class="container">
+      <h2>Why MovieBook</h2>
+      <div class="stats-grid">
+        <article><h3>100+</h3><p>Screens</p></article>
+        <article><h3>4K</h3><p>Premium Experience</p></article>
+        <article><h3>Fast</h3><p>1-click Checkout</p></article>
+      </div>
+    </section>
+  </main>
+
+  <div id="toast" class="toast"></div>
+
+  <script src="js/utils.js" defer></script>
+  <script src="js/storage.js" defer></script>
+  <script src="js/app.js" defer></script>
+</body>
+</html>

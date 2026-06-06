@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cart | MovieBook</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <header class="header glass">
+    <a class="logo" href="index.html"><img src="images/logo.svg" alt="logo" />MovieBook</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="movies.html">Movies</a>
+      <a href="cart.html" class="active">Cart <span id="cart-count">0</span></a>
+      <a href="profile.html">Profile</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Your Cart</h1>
+    <section id="cart-items" class="stack"></section>
+    <section class="panel cart-total">
+      <p>Subtotal: <strong id="subtotal">₹0</strong></p>
+      <p>Tax (5%): <strong id="tax">₹0</strong></p>
+      <p>Final Total: <strong id="grand-total">₹0</strong></p>
+      <button id="checkout" class="btn">Checkout</button>
+    </section>
+  </main>
+
+  <div id="toast" class="toast"></div>
+
+  <script src="js/utils.js" defer></script>
+  <script src="js/storage.js" defer></script>
+  <script src="js/cart.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "Starlight Protocol",
+    "genre": "Sci-Fi",
+    "language": "English",
+    "rating": 4.6,
+    "duration": "2h 14m",
+    "poster": "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=800&q=80",
+    "description": "A mission to save Earth from a collapsing satellite network turns into a race against time."
+  },
+  {
+    "id": 2,
+    "title": "Code of Shadows",
+    "genre": "Thriller",
+    "language": "Hindi",
+    "rating": 4.3,
+    "duration": "2h 06m",
+    "poster": "https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=800&q=80",
+    "description": "An ethical hacker uncovers a conspiracy hidden inside a smart-city operating system."
+  },
+  {
+    "id": 3,
+    "title": "Love in Monsoon",
+    "genre": "Romance",
+    "language": "Hindi",
+    "rating": 4.1,
+    "duration": "2h 01m",
+    "poster": "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?auto=format&fit=crop&w=800&q=80",
+    "description": "Two strangers reconnect during a citywide rainstorm and discover a shared past."
+  },
+  {
+    "id": 4,
+    "title": "Rogue Frontier",
+    "genre": "Action",
+    "language": "English",
+    "rating": 4.7,
+    "duration": "2h 22m",
+    "poster": "https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=800&q=80",
+    "description": "A retired agent must protect a border town from a mercenary syndicate."
+  },
+  {
+    "id": 5,
+    "title": "Laugh Track Live",
+    "genre": "Comedy",
+    "language": "English",
+    "rating": 4.0,
+    "duration": "1h 49m",
+    "poster": "https://images.unsplash.com/photo-1460881680858-30d872d5b530?auto=format&fit=crop&w=800&q=80",
+    "description": "A struggling stand-up comic accidentally becomes the star of a viral reality show."
+  },
+  {
+    "id": 6,
+    "title": "Temple Cipher",
+    "genre": "Adventure",
+    "language": "Tamil",
+    "rating": 4.4,
+    "duration": "2h 11m",
+    "poster": "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?auto=format&fit=crop&w=800&q=80",
+    "description": "A linguist and archaeologist decode clues hidden in ancient temples before treasure hunters do."
+  }
+]

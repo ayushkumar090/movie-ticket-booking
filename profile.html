@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile | MovieBook</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <header class="header glass">
+    <a class="logo" href="index.html"><img src="images/logo.svg" alt="logo" />MovieBook</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="movies.html">Movies</a>
+      <a href="cart.html">Cart <span id="cart-count">0</span></a>
+      <a href="profile.html" class="active">Profile</a>
+    </nav>
+  </header>
+
+  <main class="container profile-layout">
+    <section class="panel">
+      <h1>Ayush Kumar</h1>
+      <p>Email: ayush@example.com</p>
+      <p>Member: Gold</p>
+    </section>
+    <section class="panel">
+      <h2>Booking History</h2>
+      <div id="booking-history" class="stack"></div>
+    </section>
+  </main>
+
+  <div id="toast" class="toast"></div>
+
+  <script src="js/utils.js" defer></script>
+  <script src="js/storage.js" defer></script>
+  <script src="js/user.js" defer></script>
+</body>
+</html>
