@@ -14,6 +14,7 @@
   const addToCartBtn = Utils.qs("#add-to-cart");
 
   const seatPrices = { regular: 180, premium: 260, vip: 360 };
+  const TARGET_BOOKED_SEATS = 12;
   const theaters = {
     "PVR Nexus": ["10:30 AM", "1:45 PM", "6:15 PM"],
     "INOX Downtown": ["11:00 AM", "3:00 PM", "9:00 PM"],
@@ -50,12 +51,12 @@
     seatMap.innerHTML = "";
     const booked = new Set();
     let attempts = 0;
-    while (booked.size < 12 && attempts < 500) {
+    while (booked.size < TARGET_BOOKED_SEATS && attempts < 500) {
       booked.add(`S${Math.floor(Math.random() * 80) + 1}`);
       attempts += 1;
     }
-    if (booked.size < 12) {
-      for (let i = 1; i <= 80 && booked.size < 12; i += 1) {
+    if (booked.size < TARGET_BOOKED_SEATS) {
+      for (let i = 1; i <= 80 && booked.size < TARGET_BOOKED_SEATS; i += 1) {
         booked.add(`S${i}`);
       }
     }
@@ -97,8 +98,12 @@
       Utils.showToast("Please select at least one seat.");
       return;
     }
+    const bookingId =
+      typeof crypto !== "undefined" && crypto.randomUUID
+        ? crypto.randomUUID()
+        : `booking_${Date.now()}_${Math.floor(Math.random() * 1e6)}`;
     const item = {
-      id: crypto.randomUUID(),
+      id: bookingId,
       movieId: movie.id,
       title: movie.title,
       poster: movie.poster,

@@ -3,7 +3,14 @@
   Utils.updateCartCount();
 
   const historyEl = Utils.qs("#booking-history");
+  const nameEl = Utils.qs("#profile-name");
+  const emailEl = Utils.qs("#profile-email");
+  const tierEl = Utils.qs("#profile-tier");
   if (!historyEl) return;
+  const user = StorageService.getUser();
+  if (nameEl) nameEl.textContent = user.name;
+  if (emailEl) emailEl.textContent = `Email: ${user.email}`;
+  if (tierEl) tierEl.textContent = `Member: ${user.memberTier}`;
 
   const bookings = StorageService.getBookings();
   if (!bookings.length) {
