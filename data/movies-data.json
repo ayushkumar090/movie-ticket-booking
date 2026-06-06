@@ -6,7 +6,7 @@
     "language": "English",
     "rating": 4.6,
     "duration": "2h 14m",
-    "poster": "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=800&q=80",
+    "poster": "images/movie1/image1.png",
     "description": "A mission to save Earth from a collapsing satellite network turns into a race against time."
   },
   {
@@ -16,7 +16,7 @@
     "language": "Hindi",
     "rating": 4.3,
     "duration": "2h 06m",
-    "poster": "https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=800&q=80",
+    "poster": "images/movie2/image1.png",
     "description": "An ethical hacker uncovers a conspiracy hidden inside a smart-city operating system."
   },
   {
@@ -26,7 +26,7 @@
     "language": "Hindi",
     "rating": 4.1,
     "duration": "2h 01m",
-    "poster": "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?auto=format&fit=crop&w=800&q=80",
+    "poster": "images/movie3/image1.png",
     "description": "Two strangers reconnect during a citywide rainstorm and discover a shared past."
   },
   {
@@ -36,7 +36,7 @@
     "language": "English",
     "rating": 4.7,
     "duration": "2h 22m",
-    "poster": "https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=800&q=80",
+    "poster": "images/movie4/image1.png",
     "description": "A retired agent must protect a border town from a mercenary syndicate."
   },
   {
@@ -46,7 +46,7 @@
     "language": "English",
     "rating": 4.0,
     "duration": "1h 49m",
-    "poster": "https://images.unsplash.com/photo-1460881680858-30d872d5b530?auto=format&fit=crop&w=800&q=80",
+    "poster": "images/movie5/image1.png",
     "description": "A struggling stand-up comic accidentally becomes the star of a viral reality show."
   },
   {
@@ -56,7 +56,97 @@
     "language": "Tamil",
     "rating": 4.4,
     "duration": "2h 11m",
-    "poster": "https://images.unsplash.com/photo-1594909122845-11baa439b7bf?auto=format&fit=crop&w=800&q=80",
+    "poster": "images/movie6/image1.png",
     "description": "A linguist and archaeologist decode clues hidden in ancient temples before treasure hunters do."
+  },
+  {
+    "id": 7,
+    "title": "Midnight Heist",
+    "genre": "Crime",
+    "language": "English",
+    "rating": 4.5,
+    "duration": "2h 18m",
+    "poster": "images/movie7/image1.png",
+    "description": "A mastermind assembles a team for the heist of the century that goes horribly wrong."
+  },
+  {
+    "id": 8,
+    "title": "Ocean Dreams",
+    "genre": "Drama",
+    "language": "Tamil",
+    "rating": 4.2,
+    "duration": "2h 05m",
+    "poster": "images/movie8/image1.png",
+    "description": "A widow rediscovers life and love while running a seaside resort."
+  },
+  {
+    "id": 9,
+    "title": "Phantom Strike",
+    "genre": "Thriller",
+    "language": "Hindi",
+    "rating": 4.4,
+    "duration": "2h 08m",
+    "poster": "images/movie9/image1.png",
+    "description": "A covert operative hunts down a terrorist organization across three continents."
+  },
+  {
+    "id": 10,
+    "title": "Sunset Boulevard",
+    "genre": "Romance",
+    "language": "English",
+    "rating": 4.2,
+    "duration": "1h 58m",
+    "poster": "images/movie10/image1.png",
+    "description": "Two rival business owners fall in love while competing for the same prize."
+  },
+  {
+    "id": 11,
+    "title": "Galaxy Wars",
+    "genre": "Sci-Fi",
+    "language": "English",
+    "rating": 4.8,
+    "duration": "2h 45m",
+    "poster": "images/movie11/image1.png",
+    "description": "An intergalactic empire clashes with a rebel alliance in an epic space battle."
+  },
+  {
+    "id": 12,
+    "title": "Silent Echo",
+    "genre": "Mystery",
+    "language": "Hindi",
+    "rating": 4.3,
+    "duration": "2h 00m",
+    "poster": "images/movie12/image1.png",
+    "description": "A detective traces a series of cryptic messages to uncover a dark secret from the past."
+  },
+  {
+    "id": 13,
+    "title": "Jungle Quest",
+    "genre": "Adventure",
+    "language": "English",
+    "rating": 4.5,
+    "duration": "2h 20m",
+    "poster": "images/movie13/image1.png",
+    "description": "An explorer and her team search for a lost civilization hidden deep in the jungle."
+  },
+  {
+    "id": 14,
+    "title": "Neon Nights",
+    "genre": "Action",
+    "language": "English",
+    "rating": 4.6,
+    "duration": "2h 10m",
+    "poster": "images/movie14/image1.png",
+    "description": "A street racer infiltrates a criminal organization to take down its leader."
+  },
+  {
+    "id": 15,
+    "title": "Time Fractured",
+    "genre": "Sci-Fi",
+    "language": "Hindi",
+    "rating": 4.7,
+    "duration": "2h 32m",
+    "poster": "images/movie15/image1.png",
+    "description": "A scientist discovers time can be manipulated, leading to catastrophic consequences."
   }
 ]
