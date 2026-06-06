@@ -21,7 +21,15 @@ window.Utils = {
     }
   },
   async getMovies() {
-    const response = await fetch("data/movies-data.json");
-    return response.json();
+    try {
+      const response = await fetch("data/movies-data.json");
+      if (!response.ok) {
+        throw new Error(`Failed to load movies (${response.status})`);
+      }
+      return response.json();
+    } catch (error) {
+      this.showToast("Unable to load movie data.");
+      return [];
+    }
   }
 };

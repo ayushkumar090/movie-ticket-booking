@@ -27,9 +27,14 @@
   };
 
   nextBtn?.addEventListener("click", () => {
-    start = (start + 1) % Math.max(1, movies.length - 3);
+    if (movies.length <= 4) return;
+    start = (start + 1) % (movies.length - 3);
     render();
   });
+
+  if (nextBtn && movies.length <= 4) {
+    nextBtn.disabled = true;
+  }
 
   render();
 })();
